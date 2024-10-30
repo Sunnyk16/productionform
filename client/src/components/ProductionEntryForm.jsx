@@ -52,7 +52,7 @@ const ProductionEntryForm = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100 bg-gradient-to-r from-zinc-900 to-neutral-700 ">
+        <div className="flex items-center justify-center min-h-screen bg-gray-100 ">
 
 
             <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-lg px-10 py-8 w-full max-w-lg border border-gray-300">
