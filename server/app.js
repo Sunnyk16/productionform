@@ -10,8 +10,13 @@ const PORT = process.env.PORT || 5001;
 // Connect to MongoDB
 connectDB();
 
+const corsOptions = {
+    origin: 'https://productionform.vercel.app/',  // Replace with your frontend's hosted URL7
+    optionsSuccessStatus: 200
+  };
+
 // Middleware
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(bodyParser.json());
 
 // Routes
