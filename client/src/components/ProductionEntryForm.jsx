@@ -160,6 +160,7 @@ const ProductionEntryForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         console.log('Form submitted:', formData);
+        // Use environment variable for API URL
 
         try {
             const apiUrl = process.env.REACT_APP_API_URL; // Use environment variable
