@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
+import img1 from "../image/Jaisingh alloys logo1.png"
 
 const ProductionEntryForm = () => {
     const [formData, setFormData] = useState({
@@ -52,7 +53,17 @@ const ProductionEntryForm = () => {
 
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100 bg-gradient-to-r from-zinc-900 to-neutral-700 ">
+
+
             <form onSubmit={handleSubmit} className="bg-white shadow-lg rounded-lg px-10 py-8 w-full max-w-lg border border-gray-300">
+
+                <div className="flex justify-start  mb-6">
+                    <img src={img1} alt="Company Logo" className="h-12 " />
+                    <h1 className=" text-2xl text-center font-bold  text-gray-800 mb-4 mx-4">Jaisingh Alloys Pvt. Ltd.</h1>
+                </div>
+
+                {/* Company Name */}
+                
                 <h2 className="text-4xl font-bold text-center mb-6 text-gray-800">Production <span className='text-blue-500'>Entry</span> Form</h2>
 
                 {/* Date Field */}
@@ -117,7 +128,7 @@ const ProductionEntryForm = () => {
                 />
 
                 {/* Breakdown Quantity */}
-                <label className="flex text-gray-700 text-sm font-medium mb-2" htmlFor="breakdownQuantity">Breakdown Quantity</label>
+                <label className="flex text-gray-700 text-sm font-medium mb-2" htmlFor="breakdownQuantity"> breakdown (in minutes) </label>
                 <input
                     type="number"
                     name="breakdownQuantity"
@@ -136,7 +147,7 @@ const ProductionEntryForm = () => {
                 </button>
             </form>
             <ToastContainer />
-        </div>
+        </div >
     );
 };
 
