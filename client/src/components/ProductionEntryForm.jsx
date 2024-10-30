@@ -163,6 +163,7 @@ const ProductionEntryForm = () => {
 
         try {
             const apiUrl = process.env.REACT_APP_API_URL; // Use environment variable
+
             const response = await fetch(`${apiUrl}/api/production-entry`, {
                 method: 'POST',
                 headers: {

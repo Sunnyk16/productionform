@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5001;
 connectDB();
 
 const corsOptions = {
-    origin: 'https://productionform.vercel.app/',  // Replace with your frontend's hosted URL7
+    origin: process.env.ORIGIN,  // Replace with your frontend's hosted URL7
     optionsSuccessStatus: 200
   };
 
