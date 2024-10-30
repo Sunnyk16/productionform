@@ -163,9 +163,9 @@ const ProductionEntryForm = () => {
         // Use environment variable for API URL
 
         try {
-            const apiUrl = process.env.REACT_APP_API_URL; // Use environment variable
+            // const apiUrl = https://productionform.onrender.com/api/production-entry ;
 
-            const response = await fetch(`${apiUrl}/api/production-entry`, {
+            const response = await fetch(`https://productionform.onrender.com/api/production-entry`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
